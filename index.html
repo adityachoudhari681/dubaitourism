@@ -1,3 +1,4 @@
+
 <style>
 .gateway{font-size: 85px;
 color: rgba(201, 250, 250, 0.884);}
@@ -5,29 +6,99 @@ color: rgba(201, 250, 250, 0.884);}
 color: rgba(253, 154, 154, 0.918);}
 .page-link{background-color: rgba(252, 63, 63, 0.836); color: rgba(27, 240, 255, 0.884);}
 .logo{display: flex; }
-
 .navbar1 {text-decoration: none; color: black;font-weight: bolder;}
 .navbar1:hover{text-decoration: underline solid red 4px ; color: black; }
 .card
-{
-  margin-left: 15px;margin-right: 50px;
- 
+{  margin-left: 15px;margin-right: 50px;
 }
 .dabbe{display: flex;
 margin-top: 30px ;
 margin-left: 25px;}
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+* {
+  box-sizing: border-box;
+}
 
+.bg-image {
+  /* The image used */
+  background-image: url("https://media.istockphoto.com/id/1460819165/photo/dubai-desert-at-sunset-united-arab-emirates.webp?b=1&s=170667a&w=0&k=20&c=QxkndyPK9hNn9BtH6La2ZqZaU3I7o6Wstpa7RMB0xdo=");
+  
+  /* Add the blur effect */
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  padding-bottom: 34px;
+  padding-top: 34px;
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 34px;
+}
+.special_card {
+  margin-left:2.5px ;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-left: 11px;
+  
+}
+.special_img_card {
+  width: 50%;
+  border-radius: 5px;
+}
+.specialcardtext
+{
+  padding-top: 10px;
+  text-align: center;
+}
 </style>
 
-
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
-
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<!--Navbar-->
+  <title>Dubai Tourism</title>
+</head>
+<body>
+  <!--Navbar-->
 
 <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
@@ -50,53 +121,33 @@ margin-left: 25px;}
     </a>
   </div>
 </nav>
-<!--Carosel-->
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      
-      <img class="d-block w-100" src="https://visitabudhabi.ae/-/media/project/vad/getaway-to-abu-dhabi/getaway-to-abu-dhabi-regional-hero-2.jpg?cx=0.49&cy=0.63&cw=1680&ch=940&hash=CB2445DD7633CB79AABBE4872FCAD4FD" alt="First slide">
-      <div class="carousel-caption d-none d-md-block">
-        <h5 class="gateway">Gateway To Abu Dabhi</h5>
-        <p class="info_gateway">Gateway to Excitment</p>
-      </div>
-    
-    </div>
+<!--Image-->
 
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://visitabudhabi.ae/-/media/project/vad/getaway-to-abu-dhabi/getaway-to-abu-dhabi-regional-hero-1.jpg?cx=0.47&cy=0.5&cw=1680&ch=940&hash=A7E806C65B04B0D790789F886DC4CA7B" alt="Second slide">
-      <div class="carousel-caption d-none d-md-block">
-        <h5 class="gateway">Gateway To Abu Dabhi</h5>
-        <p class="info_gateway">Gateway to Dining Out</p>
-      </div>
-    
-    
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="https://visitabudhabi.ae/-/media/project/vad/galleryimages/things-to-do/shopping/yas-mall/yas-mall-013.jpg?cx=0.39&cy=0.55&cw=1680&ch=940&hash=4CD6314554A38AC6F0368B6F575A1AB7" alt="Third slide">
-      <div class="carousel-caption d-none d-md-block">
-        <h5 class="gateway">Gateway To Abu Dabhi</h5>
-        <p class="info_gateway">Gateway to Luxury</p>
-      </div>
-    
-    
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only"></span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only"></span>
-  </a>
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <h2>Bookings Open</h2>
+  <br>
+
+  <h1 style="font-size:50px">Habibi! Come To Dubai</h1>
+<br>
+  <p>One Summer Isn't Enough!</p>
+</div> 
+<!--Image Box-->
+
+<h1 class="specialcardtext" >Your summer inspiration</h1>
+<div class="special_card">
+  <img
+    class="special_img_card"
+    src="https://cdn.filestackcontent.com/rotate=deg:exif/3irbRJlTXa1nIeLF4QQw"
+    alt="image"
+  />
+  <img
+    class="special_img_card"
+    src="https://cdn.filestackcontent.com/rotate=deg:exif/uy72ASsfR7eZM94ygL3h"
+    alt="image"
+  />
 </div>
-
 
 <!--Cards-->
 
@@ -108,7 +159,7 @@ margin-left: 25px;}
     <p class="card-text">
       Saadiyat Rotana Resort & Villas is a one-of-a-kind luxury hotel set on a 9km stretch of pristine white beach on Abu Dhabi's stunning Saadiyat Island. The beach is also home to the indigenous Hawksbill sea turtles, which is highlighted throughout the resort.
       The resort's 327 rooms and suites, and 13 beach villas.</p>
-    <a href="#" class="btn btn-danger">Read More</a>
+    <a href="#" class="btn btn-danger">Discover More</a>
   </div>
 </div>
 <div class="card" style="width: 18rem;">
@@ -118,7 +169,7 @@ margin-left: 25px;}
     <p class="card-text">Yas Marina is not only one of Abu Dhabi’s finest marinas, but also a vibrant venue offering dining, fitness and leisure facilities for the whole family.
       Yas Marina Circuit is one of the most technologically-advanced tracks in the world, home to the annual Formula 1® Etihad Airways Abu Dhabi Grand Prix and a living, breathing part of life in Abu Dhabi.
     </p>
-    <a href="#" class="btn btn-danger">Read More</a>
+    <a href="#" class="btn btn-danger">Discover More</a>
   </div>
 </div>
 <div class="card" style="width: 18rem;">
@@ -126,25 +177,21 @@ margin-left: 25px;}
   <div class="card-body">
     <h5 class="card-title">The National Aquarium</h5>
     <p class="card-text"> The National Aquarium in Al Qana is literally swimming with aquatic wildlife featuring over 46,000 animals from more than 300 unique species. Spread across 10 nautically-themed zones, from the UAE’s Natural Treasures, sunken sea wrecks and Atlantic caves. </p>
-    <a href="#" class="btn btn-danger">Read More</a>
+    <a href="#" class="btn btn-danger">Discover More</a>
   </div>
 </div>
 
 <div class="card" style="width: 18rem;">
-  <img width="265px " height="312px" src="https://visitabudhabi.ae/-/media/project/vad/plan-your-trip/where-to-stay/park-hyatt-abu-dhabi-hotel-and-villas/park-hyatt-main-image-5000x2800.jpg?cx=0.44&cy=0.54&cw=1680&ch=621&hash=4310469680C3E83649B845865E992C91 class="card-img-top" alt="dubai" >
+  <img width="265px " height="312px" src="https://visitabudhabi.ae/-/media/project/vad/plan-your-trip/where-to-stay/park-hyatt-abu-dhabi-hotel-and-villas/park-hyatt-main-image-5000x2800.jpg?cx=0.44&cy=0.54&cw=1680&ch=621&hash=4310469680C3E83649B845865E992C91 "class="card-img-top" alt="dubai" >
   <div class="card-body">
     <h5 class="card-title">Park Hyatt Abu Dhabi Hotel and Villas</h5>
     <p class="card-text">On the natural island of Saadiyat, the five-star Park Hyatt Abu Dhabi Hotel and Villas is an exclusive 
 
       unobstructed vistas of the turquoise Arabian Gulf he beach is also home to the indigenous Hawksbill sea turtles, waters and Saadiyat Beach Golf Club from both restaurants and rooms. </p>
-    <a href="#" class="btn btn-danger">Read More</a>
+    <a href="#" class="btn btn-danger">Discover More</a>
   </div>
 </div>
-
 </div>
-
-
-
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted">
   <!-- Section: Social media -->
@@ -274,6 +321,8 @@ margin-left: 25px;}
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
+</body>
+</html>
 
 
 
